@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.milen.trashcalc.ui.activities.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/data_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".ui.activities.MainActivity1"
+        tools:showIn="@layout/app_bar_main">
+
+        <EditText
+            android:id="@+id/et_scanned_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_scanned_value_marging"
+            android:hint="@string/hand_made"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_entered_trash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/entered_trash_weight"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/et_empty_trash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/empty_trash_weight"
+            android:inputType="numberDecimal"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/scann" />
+        <item
+            android:id="@+id/nav_users"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="@string/insert_new_user" />
+
+        <item
+            android:id="@+id/nav_get_report"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/get_report" />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@android:drawable/ic_delete"
+            android:title="@string/action_exit" />
+    </group>
+
+</menu>
